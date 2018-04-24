@@ -1,2 +1,36 @@
 @import "compass/reset";
 
+.header {
+    background-color: #88a3d6;
+    width: 100%;
+    position: relative;
+    height: 60px;
+    margin-bottom: 30px;
+}
+
+.content {
+    margin-left: 30px;
+    margin-right: 30px;
+    
+    
+    &__left, &__center, &__right {
+        display: inline-block;
+        vertical-align: top;
+    }
+    &__left {
+        width: 270px;
+    }
+    &__right {
+        width: 240px;
+    }
+}
+
+.center {
+    width: calc(100% - 540px);
+    margin-left: 10px;
+    margin-right: 10px;
+    &__img {
+        vertical-align: top;
+        margin: 0 1% 2%;
+    }
+}

@@ -10,24 +10,25 @@
 
 .content {
     margin-left: 30px;
+    position: relative;
     margin-right: 30px;
     
-    
-    &__left, &__center, &__right {
-        display: inline-block;
-        vertical-align: top;
-    }
     &__left {
+        position: absolute;
         width: 270px;
+        top: 0;
     }
     &__right {
+        position: absolute;
         width: 240px;
+        right: 0;
+        top: 0;
     }
 }
 
 .center {
     width: calc(100% - 540px);
-    margin-left: 10px;
+    margin-left: 280px;
     margin-right: 10px;
     &__img {
         vertical-align: top;
@@ -35,3 +36,6 @@
     }
 }
 
+#wrapper, body {
+    min-width: 280px;
+}
